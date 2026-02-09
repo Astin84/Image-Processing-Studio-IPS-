@@ -1,7 +1,19 @@
 # IPS — Image Processing Studio
 
-IPS (Image Processing Studio) is a GUI-based Python application developed for the **Image Processing and Fundamentals of Computer Vision** course at **Bahonar University**.  
-The project provides an interactive environment for exploring spatial and frequency-domain image processing concepts using OpenCV.
+IPS (Image Processing Studio) is a GUI-based Python application developed for the  
+**Image Processing and Fundamentals of Computer Vision** course at **Bahonar University**.
+
+It provides an interactive environment for exploring **spatial and frequency-domain**
+image processing concepts using OpenCV, with real-time visualization and code display.
+
+---
+
+## 🖥️ Main Environment
+
+The main workspace of IPS includes image preview, histograms, tool panels,
+and a real-time OpenCV code viewer.
+
+![Main Environment](IPS_Pictures/mainEnv.png)
 
 ---
 
@@ -9,108 +21,132 @@ The project provides an interactive environment for exploring spatial and freque
 
 IPS is designed as an **educational tool** to help students understand:
 
-- Core image processing operations
+- Digital image processing fundamentals
 - Noise modeling and removal
-- Frequency-domain filtering using Fourier Transform
+- Frequency-domain analysis using Fourier Transform
 - Practical usage of OpenCV (cv2) functions
 
-A unique feature of IPS is the **real-time OpenCV code viewer**, which displays the exact CV2 code used for each operation.
+A key educational feature is the **real-time CV2 code displayer**.
 
 ---
 
-## 🧰 Main Features
+## 🧰 Tools Overview
 
-### 📂 Image File Management
-- Open images (JPG, PNG, BMP)
-- Save processed images
-- Reset image to the original state
+All processing tools are grouped into logical sections for ease of use.
 
----
-
-### 🖼️ Image Visualization
-- Real-time image preview
-- Grayscale and color image display
-- Image histogram visualization
-  - Intensity histogram
-  - Color channel histograms
-- Automatic histogram updates after each operation
+![Tools Panel](IPS_Pictures/Tools.png)
 
 ---
 
-### 🔧 Spatial Domain Image Operations
-Basic pixel-level and geometric operations implemented using OpenCV:
+## 🖼️ Image Visualization
+
+IPS provides real-time visualization tools:
+
+- Image preview
+- Grayscale and color display
+- Histogram visualization
+
+### Color Histogram
+
+Displays intensity distribution for grayscale and RGB channels.
+
+![Color Histogram](IPS_Pictures/ColorHist.png)
+
+### Visual Tools
+
+Controls related to visualization and display settings.
+
+![Visual Tools](IPS_Pictures/Visual Tools.png)
+
+---
+
+## 🔧 Spatial Domain Image Operations
+
+Basic image manipulation tools implemented using OpenCV:
 
 - Image inversion
-- Image rotation
+- Rotation
 - Flip operations
 - Intensity transformations
 
-These operations demonstrate **spatial domain processing fundamentals**.
+![Image Operations Tools](IPS_Pictures/Operations Tools.png)
+
+These operations demonstrate **spatial-domain processing fundamentals**.
 
 ---
 
-### 🔊 Noise Addition
+## 🔊 Noise Addition
+
 IPS supports controlled noise modeling for experimentation:
 
 - Salt & Pepper Noise
 - Gaussian Noise
 
-Noise parameters can be adjusted to study their effects on image quality and frequency components.
+Noise parameters can be adjusted to study their effect on image quality.
+
+![Add Noise Tools](IPS_Pictures/AddNoise Tools.png)
 
 ---
 
-### 🧹 Denoising Filters
-Common noise reduction techniques taught in image processing courses:
+## 🧹 Denoising Filters
+
+Common noise removal techniques taught in image processing courses:
 
 - Mean Filter
 - Median Filter
 - Gaussian Filter
 - Bilateral Filter
 
+![Denoise Tools](IPS_Pictures/DenoiseTool.png)
+
 These filters allow comparison between different denoising approaches.
 
 ---
 
-### 🎛️ Frequency Domain Processing
-IPS includes full support for Fourier-based image analysis:
+## 🎛️ Frequency Domain Processing
 
-- Fast Fourier Transform (FFT)
-- Inverse FFT
-- Frequency-domain filtering
+IPS includes full support for Fourier-based image analysis.
 
-#### Available Frequency Filters:
+### Frequency Filters:
 - Low-Pass Filter
 - High-Pass Filter
 - Gaussian Filter
 - Notch Pass Filter
 - Notch Reject Filter
 
-These filters demonstrate how modifying frequency components affects spatial image structure.
+![Frequency Tools](IPS_Pictures/Frequencies Tools.png)
 
 ---
 
-### 📊 Fourier Analysis Visualization
-IPS provides detailed frequency-domain visual outputs:
+## 📊 Fourier Analysis
+
+The Fourier Analysis section provides detailed frequency-domain visualization:
 
 - Magnitude Spectrum (log scale)
 - Power Spectrum
 - Phase Spectrum
 - Radial Average of Magnitude Spectrum (1D profile)
 
-These visualizations help users analyze frequency distribution and image texture.
+![Fourier Analysis](IPS_Pictures/Fourier Analysis.png)
+
+These visualizations help analyze frequency distribution and texture information.
 
 ---
 
-### 🧠 Real-Time OpenCV Code Viewer
-One of the key educational features of IPS:
+## 🧠 Real-Time OpenCV Code Viewer
+
+One of the most important educational features of IPS:
 
 - Displays the **exact OpenCV (cv2) code** used for:
   - Image operations
   - Noise addition
-  - Denoising
-  - Frequency filtering
+  - Denoising filters
+  - Frequency-domain filters
 - Updates dynamically as operations are applied
-- Helps students connect theory with real implementation
+
+![CV2 Code Viewer](IPS_Pictures/Cv2CodeDisplayer.png)
+
+This helps students connect **theory with implementation**.
 
 ---
 
@@ -126,7 +162,7 @@ One of the key educational features of IPS:
 ### Design Principles:
 - Separation of original and processed images
 - Modular processing functions
-- Centralized code generation for CV2 viewer
+- Centralized CV2 code generation
 - Real-time visualization updates
 
 ---
@@ -147,8 +183,8 @@ One of the key educational features of IPS:
 ## 📚 Topics Covered
 
 - Digital image processing
-- Spatial domain filtering
-- Frequency domain filtering
+- Spatial-domain filtering
+- Frequency-domain filtering
 - Noise modeling
 - Fourier Transform
 - Histogram analysis
@@ -184,4 +220,6 @@ Contributions and improvements are welcome.
 ## 📌 Final Note
 
 IPS is not just an image processing tool —  
-it is a **learning-oriented studio** designed to help students visualize, experiment, and understand the fundamentals of image processing and computer vision through real code and real results.
+it is a **learning-oriented studio** designed to help students visualize,
+experiment, and understand image processing and computer vision through
+real code and real results.
