@@ -13,7 +13,7 @@ image processing concepts using OpenCV, with real-time visualization and code di
 The main workspace of IPS includes image preview, histograms, tool panels,
 and a real-time OpenCV code viewer.
 
-![Main Environment](IPS_Pics/mainEnv.png)
+![Main Environment](IPS-Pics/mainEnv.png)
 
 ---
 
@@ -34,7 +34,7 @@ A key educational feature is the **real-time CV2 code displayer**.
 
 All processing tools are grouped into logical sections for ease of use.
 
-![Tools Panel](IPS_Pics/Tools.png)
+![Tools Panel](IPS-Pics/Tools.png)
 
 ---
 
@@ -50,7 +50,7 @@ IPS provides real-time visualization tools:
 
 Displays intensity distribution for grayscale and RGB channels.
 
-![Color Histogram](IPS_Pics/ColorHist.png)
+![Color Histogram](IPS-Pics/ColorHist.png)
 
 ### Visual Tools
 
@@ -97,7 +97,7 @@ Common noise removal techniques taught in image processing courses:
 - Gaussian Filter
 - Bilateral Filter
 
-![Denoise Tools](IPS_Pics/DenoiseTool.png)
+![Denoise Tools](IPS-Pics/DenoiseTool.png)
 
 These filters allow comparison between different denoising approaches.
 
@@ -144,7 +144,7 @@ One of the most important educational features of IPS:
   - Frequency-domain filters
 - Updates dynamically as operations are applied
 
-![CV2 Code Viewer](IPS_Pics/Cv2CodeDisplayer.png)
+![CV2 Code Viewer](IPS-Pics/Cv2CodeDisplayer.png)
 
 This helps students connect **theory with implementation**.
 
