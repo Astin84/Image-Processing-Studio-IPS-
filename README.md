@@ -1,137 +1,187 @@
-IPS — Image Processing Studio
-IPS (Image Processing Studio) is a GUI‑based Python application developed for the Image Processing and Fundamentals of Computer Vision course at Bahonar University.
+# IPS — Image Processing Studio
 
-The software is designed as an educational and practical tool to demonstrate core concepts of digital image processing using OpenCV, NumPy, and Fourier analysis.
+IPS (Image Processing Studio) is a GUI-based Python application developed for the **Image Processing and Fundamentals of Computer Vision** course at **Bahonar University**.  
+The project provides an interactive environment for exploring spatial and frequency-domain image processing concepts using OpenCV.
 
-🎯 Project Objectives
-The main goals of IPS are:
+---
 
-To provide a hands‑on learning environment for image processing concepts
-To visualize spatial and frequency domain operations
-To help students understand how OpenCV functions are actually used
-To bridge the gap between theory and implementation
-A key educational feature of IPS is the real‑time OpenCV (CV2) code viewer, which displays the exact code executed for each image processing operation.
+## 🎓 Academic Purpose
 
-✨ Key Features
-📂 Image Management
-Open images in common formats (JPG, PNG, BMP)
-Save processed images to disk
-Reset image to its original state at any time
-🖼️ Image Visualization
-Real‑time image preview
-Color and intensity visualization
-Image histogram display
-Grayscale histogram
-Color channel histograms
-Histogram updates dynamically after each operation
-🧮 Image Operations (Spatial Domain)
-Basic image manipulation tools implemented using OpenCV:
+IPS is designed as an **educational tool** to help students understand:
 
-Image inversion
-Rotation
-Flipping
-Intensity transformations
-Pixel‑level operations
-These operations help demonstrate spatial domain processing fundamentals.
+- Core image processing operations
+- Noise modeling and removal
+- Frequency-domain filtering using Fourier Transform
+- Practical usage of OpenCV (cv2) functions
 
-🔊 Noise Addition
-IPS allows controlled noise modeling for experimentation and analysis:
+A unique feature of IPS is the **real-time OpenCV code viewer**, which displays the exact CV2 code used for each operation.
 
-Salt & Pepper Noise
-Gaussian Noise
-Noise parameters can be adjusted to observe their effect on image quality and frequency content.
+---
 
-🧹 Denoising Filters
-Noise reduction filters commonly taught in image processing courses:
+## 🧰 Main Features
 
-Mean Filter
-Median Filter
-Gaussian Filter
-Bilateral Filter
-These filters allow direct comparison between different denoising techniques.
+### 📂 Image File Management
+- Open images (JPG, PNG, BMP)
+- Save processed images
+- Reset image to the original state
 
-🎛️ Frequency Domain Processing (Fourier Analysis)
-IPS includes a full Fourier Transform workflow:
+---
 
-Fast Fourier Transform (FFT)
-Inverse FFT
-Frequency domain visualization
-Frequency Filters:
-Low‑Pass Filter
-High‑Pass Filter
-Gaussian Filter
-Notch Pass Filter
-Notch Reject Filter
-These filters demonstrate how frequency manipulation affects spatial image characteristics.
+### 🖼️ Image Visualization
+- Real-time image preview
+- Grayscale and color image display
+- Image histogram visualization
+  - Intensity histogram
+  - Color channel histograms
+- Automatic histogram updates after each operation
 
-📊 Fourier Visualization Panels
-IPS provides detailed frequency‑domain visualizations:
+---
 
-Magnitude Spectrum (log scale)
-Power Spectrum
-Phase Spectrum
-Radial Average of Magnitude Spectrum
-These visual tools help users understand the distribution of frequency components in images.
+### 🔧 Spatial Domain Image Operations
+Basic pixel-level and geometric operations implemented using OpenCV:
 
-🧠 Real‑Time OpenCV Code Viewer (Educational Feature)
-One of the most important features of IPS:
+- Image inversion
+- Image rotation
+- Flip operations
+- Intensity transformations
 
-Displays the exact OpenCV (cv2) code executed for:
-Filters
-Noise addition
-Denoising
-Image operations
-Updates dynamically as operations are applied
-Shows only the relevant CV2 functions, not the entire application code
-This feature is designed specifically for learning and teaching purposes.
+These operations demonstrate **spatial domain processing fundamentals**.
 
-🧱 Software Architecture
-Developed in Python
-Uses:
-OpenCV (cv2)
-NumPy
-Matplotlib (for plots)
-GUI framework (PyQt / Tkinter based)
-Core Design Concepts:
-Separation between:
-Original image
-Working image
-Modular filter and operation handlers
-Centralized code‑generation logic for CV2 viewer
-🧪 Typical Workflow
-Load an image
-Inspect histogram and visualization
-Add noise to the image
-Apply denoising filters
-Perform Fourier analysis
-Apply frequency filters
-View real‑time OpenCV code
-Save final result
-🎓 Academic Context
-This project was developed as part of the Image Processing and Fundamentals of Computer Vision course at Bahonar University.
+---
 
-It is intended for:
+### 🔊 Noise Addition
+IPS supports controlled noise modeling for experimentation:
 
-Undergraduate students
-Computer vision beginners
-Digital image processing laboratories
-📚 Topics Covered
-Spatial domain processing
-Frequency domain processing
-Noise modeling
-Image filtering
-Fourier Transform
-Histogram analysis
-OpenCV practical usage
-📄 License
-This project is released under the MIT License and is free to use for educational purposes.
+- Salt & Pepper Noise
+- Gaussian Noise
 
-🤝 Contributions
-Contributions, improvements, and suggestions are welcome.
+Noise parameters can be adjusted to study their effects on image quality and frequency components.
 
-Feel free to open issues or submit pull requests.
+---
 
-📌 Final Note
-IPS is not just an image processing tool —
+### 🧹 Denoising Filters
+Common noise reduction techniques taught in image processing courses:
 
-it is a learning platform designed to help students see, apply, and understand the fundamentals of computer vision through real code and real results.
+- Mean Filter
+- Median Filter
+- Gaussian Filter
+- Bilateral Filter
+
+These filters allow comparison between different denoising approaches.
+
+---
+
+### 🎛️ Frequency Domain Processing
+IPS includes full support for Fourier-based image analysis:
+
+- Fast Fourier Transform (FFT)
+- Inverse FFT
+- Frequency-domain filtering
+
+#### Available Frequency Filters:
+- Low-Pass Filter
+- High-Pass Filter
+- Gaussian Filter
+- Notch Pass Filter
+- Notch Reject Filter
+
+These filters demonstrate how modifying frequency components affects spatial image structure.
+
+---
+
+### 📊 Fourier Analysis Visualization
+IPS provides detailed frequency-domain visual outputs:
+
+- Magnitude Spectrum (log scale)
+- Power Spectrum
+- Phase Spectrum
+- Radial Average of Magnitude Spectrum (1D profile)
+
+These visualizations help users analyze frequency distribution and image texture.
+
+---
+
+### 🧠 Real-Time OpenCV Code Viewer
+One of the key educational features of IPS:
+
+- Displays the **exact OpenCV (cv2) code** used for:
+  - Image operations
+  - Noise addition
+  - Denoising
+  - Frequency filtering
+- Updates dynamically as operations are applied
+- Helps students connect theory with real implementation
+
+---
+
+## 🧱 Software Architecture
+
+- Language: Python
+- Libraries:
+  - OpenCV (cv2)
+  - NumPy
+  - Matplotlib
+- GUI-based desktop application
+
+### Design Principles:
+- Separation of original and processed images
+- Modular processing functions
+- Centralized code generation for CV2 viewer
+- Real-time visualization updates
+
+---
+
+## 🔄 Typical Workflow
+
+1. Load an image
+2. Inspect histogram and visualization
+3. Add noise
+4. Apply denoising filters
+5. Perform Fourier analysis
+6. Apply frequency-domain filters
+7. View OpenCV code in real time
+8. Save the final image
+
+---
+
+## 📚 Topics Covered
+
+- Digital image processing
+- Spatial domain filtering
+- Frequency domain filtering
+- Noise modeling
+- Fourier Transform
+- Histogram analysis
+- Practical OpenCV programming
+
+---
+
+## 🧪 Intended Audience
+
+- Undergraduate students
+- Computer vision beginners
+- Image processing laboratory courses
+- Anyone learning OpenCV fundamentals
+
+---
+
+## 📄 License
+
+This project is released under the **MIT License**  
+Free to use for educational and academic purposes.
+
+---
+
+## 🤝 Contributions
+
+Contributions and improvements are welcome.
+
+- Open an issue for bugs or suggestions
+- Submit pull requests for enhancements
+
+---
+
+## 📌 Final Note
+
+IPS is not just an image processing tool —  
+it is a **learning-oriented studio** designed to help students visualize, experiment, and understand the fundamentals of image processing and computer vision through real code and real results.
